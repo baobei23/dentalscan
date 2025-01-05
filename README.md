@@ -71,6 +71,8 @@ npx expo start
 npx expo run:android
 ```
 
+Untuk panduan lebih lanjut, bisa dilihat di [React Native Expo](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated)
+
 ### Instalasi untuk iOS
 
 1. Persiapan Development Environment
@@ -101,6 +103,7 @@ npx expo start
 # atau
 npx expo run:ios
 ```
+Untuk panduan lebih lanjut, bisa dilihat di [React Native Expo](https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated)
 
 ### Troubleshooting
 
