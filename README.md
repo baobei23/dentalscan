@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# DentalScan
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+DentalScan adalah aplikasi mobile yang menghubungkan pasien dengan dokter gigi dan menyediakan fitur deteksi kesehatan gigi menggunakan AI. Aplikasi ini dibangun dengan React Native dan Expo.
 
-## Get started
+## Fitur Utama
 
-1. Install dependencies
+### 1. Deteksi Kesehatan Gigi dengan AI
+- Upload foto gigi melalui kamera atau galeri
+- Deteksi kondisi gigi menggunakan model AI Roboflow
+- Hasil deteksi menampilkan kondisi gigi dan rekomendasi perawatan
 
-   ```bash
-   npm install
-   ```
+### 2. Konsultasi dengan Dokter Gigi
+- Lihat daftar dokter gigi beserta rating dan informasi klinik
+- Jadwalkan konsultasi dengan memilih tanggal dan waktu
+- Tunjukkan lokasi masalah gigi melalui diagram interaktif
+- Pembayaran konsultasi yang mudah
 
-2. Start the app
+### 3. Manajemen Profil
+- Edit foto profil
+- Lihat riwayat konsultasi
+- Pengaturan akun
+- Detail pembayaran
 
-   ```bash
-    npx expo start
-   ```
+## Teknologi yang Digunakan
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- Firebase (Authentication & Storage)
+- Roboflow API untuk deteksi AI
+- React Navigation untuk navigasi
+- Expo Image Picker untuk manajemen gambar
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Instalasi
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone repositori
 ```bash
-npm run reset-project
+git clone https://github.com/username/dentalscan.git
+cd dentalscan
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+3. Setup environment variables
+- Rename `.env.example` ke `.env`
+- Isi kredensial Firebase dan Roboflow API key
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Jalankan aplikasi
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Struktur Proyek
 
-## Join the community
+```
+dentalscan/
+├── assets/          # Gambar dan aset lainnya
+├── components/      # Komponen React yang dapat digunakan kembali
+├── config/          # Konfigurasi Firebase
+├── navigation/      # Setup navigasi
+├── screens/         # Halaman-halaman aplikasi
+└── utils/          # Fungsi utilitas
+```
 
-Join our community of developers creating universal apps.
+## Lisensi
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+Project Link: [https://github.com/username/dentalscan](https://github.com/username/dentalscan)
