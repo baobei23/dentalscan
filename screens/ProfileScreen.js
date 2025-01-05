@@ -71,6 +71,14 @@ export const ProfileScreen = ({ navigation }) => {
           <MaterialIcons name="chevron-right" size={24} color="#666" />
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.menuItem}>
+          <View style={styles.menuIconContainer}>
+            <MaterialIcons name="history" size={24} color="#8b5cf6" />
+          </View>
+          <Text style={styles.menuText}>History</Text>
+          <MaterialIcons name="chevron-right" size={24} color="#666" />
+        </TouchableOpacity>
+
         <TouchableOpacity style={styles.menuItem} onPress={handleLogout}>
           <View style={styles.menuIconContainer}>
             <MaterialIcons name="logout" size={24} color="#8b5cf6" />

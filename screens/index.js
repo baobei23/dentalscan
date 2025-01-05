@@ -5,5 +5,9 @@ import { ForgotPasswordScreen } from "./ForgotPasswordScreen";
 import { DetectionFeature } from "./DetectionFeature";
 import { ProfileScreen } from "./ProfileScreen";
 import { EditProfilePicture } from "./EditProfilePicture";
+import { DentistListScreen } from "./DentistListScreen";
+import { DentistInfoScreen } from "./DentistInfoScreen";
+import { ConsultationScheduleScreen } from "./ConsultationScheduleScreen";
+import { LocateYourProblem } from "./LocateYourProblem";
 
-export { LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen, DetectionFeature, ProfileScreen, EditProfilePicture };
+export { LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen, DetectionFeature, ProfileScreen, EditProfilePicture, DentistListScreen, DentistInfoScreen, ConsultationScheduleScreen, LocateYourProblem };

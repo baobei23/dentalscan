@@ -23,6 +23,11 @@ export const HomeScreen = () => {
     navigation.navigate('Profile');
   };
 
+  const handleDentistPress = () => {
+    console.log('Navigating to DentistList');
+    navigation.navigate('DentistList');
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient
@@ -45,7 +50,10 @@ export const HomeScreen = () => {
 
           {/* Navigation Buttons */}
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity 
+              style={styles.button}
+              onPress={handleDentistPress}
+            >
               <Text style={styles.buttonText}>Connect to new dentists</Text>
             </TouchableOpacity>
 
