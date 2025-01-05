@@ -9,5 +9,6 @@ import { DentistListScreen } from "./DentistListScreen";
 import { DentistInfoScreen } from "./DentistInfoScreen";
 import { ConsultationScheduleScreen } from "./ConsultationScheduleScreen";
 import { LocateYourProblem } from "./LocateYourProblem";
+import { InvoiceScreen } from "./InvoiceScreen";
 
-export { LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen, DetectionFeature, ProfileScreen, EditProfilePicture, DentistListScreen, DentistInfoScreen, ConsultationScheduleScreen, LocateYourProblem };
+export { LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen, DetectionFeature, ProfileScreen, EditProfilePicture, DentistListScreen, DentistInfoScreen, ConsultationScheduleScreen, LocateYourProblem, InvoiceScreen };

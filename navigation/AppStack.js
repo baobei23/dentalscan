@@ -1,6 +1,6 @@
 import * as React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { HomeScreen, DetectionFeature, ProfileScreen, EditProfilePicture, DentistListScreen, DentistInfoScreen, ConsultationScheduleScreen, LocateYourProblem } from "../screens";
+import { HomeScreen, DetectionFeature, ProfileScreen, EditProfilePicture, DentistListScreen, DentistInfoScreen, ConsultationScheduleScreen, LocateYourProblem, InvoiceScreen } from "../screens";
 import { DetectionResult } from "../screens/DetectionResult";
 
 const Stack = createStackNavigator();
@@ -17,6 +17,7 @@ export const AppStack = () => {
       <Stack.Screen name="DentistInfo" component={DentistInfoScreen} />
       <Stack.Screen name="ConsultationSchedule" component={ConsultationScheduleScreen} />
       <Stack.Screen name="LocateYourProblem" component={LocateYourProblem} />
+      <Stack.Screen name="Invoice" component={InvoiceScreen} />
     </Stack.Navigator>
   );
 };

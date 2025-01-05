@@ -5,6 +5,10 @@ import { Ionicons } from '@expo/vector-icons';
 export const LocateYourProblem = ({ route, navigation }) => {
   const { dentist } = route.params;
 
+  const handleSubmit = () => {
+    navigation.navigate('Invoice', { dentist });
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       {/* Header */}
@@ -41,7 +45,10 @@ export const LocateYourProblem = ({ route, navigation }) => {
       </View>
 
       {/* Submit Button */}
-      <TouchableOpacity style={styles.submitButton}>
+      <TouchableOpacity 
+        style={styles.submitButton}
+        onPress={handleSubmit}
+      >
         <Text style={styles.submitButtonText}>Submit</Text>
       </TouchableOpacity>
     </SafeAreaView>
