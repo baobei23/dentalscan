@@ -32,6 +32,8 @@ DentalScan adalah aplikasi mobile yang menghubungkan pasien dengan dokter gigi d
 
 ## Instalasi
 
+### Persiapan Awal
+
 1. Clone repositori
 ```bash
 git clone https://github.com/username/dentalscan.git
@@ -47,9 +49,77 @@ npm install
 - Rename `.env.example` ke `.env`
 - Isi kredensial Firebase dan Roboflow API key
 
+### Instalasi untuk Android
+
+1. Persiapan Development Environment
+   - Install Android Studio
+   - Install Android SDK (minimal API level 21)
+   - Setup ANDROID_HOME environment variable
+   - Tambahkan platform-tools ke PATH
+
+2. Setup Emulator/Device
+   - Buat Android Virtual Device (AVD) melalui Android Studio
+   - Atau gunakan device fisik dengan USB Debugging diaktifkan
+
+3. Jalankan aplikasi
+```bash
+# Start Metro bundler
+npx expo start
+
+# Tekan 'a' untuk menjalankan di Android
+# atau
+npx expo run:android
+```
+
+### Instalasi untuk iOS
+
+1. Persiapan Development Environment
+   - Install Xcode (versi terbaru)
+   - Install Xcode Command Line Tools
+   - Install CocoaPods
+```bash
+sudo gem install cocoapods
+```
+
+2. Setup iOS Simulator/Device
+   - Buka Xcode dan install iOS Simulator
+   - Untuk device fisik, daftar Apple Developer account
+
+3. Install dependencies iOS
+```bash
+cd ios
+pod install
+cd ..
+```
+
 4. Jalankan aplikasi
 ```bash
+# Start Metro bundler
 npx expo start
+
+# Tekan 'i' untuk menjalankan di iOS
+# atau
+npx expo run:ios
+```
+
+### Troubleshooting
+
+#### Android
+- Pastikan ANDROID_HOME sudah diset dengan benar
+- Cek USB Debugging sudah aktif jika menggunakan device fisik
+- Bersihkan cache jika terjadi error:
+```bash
+cd android
+./gradlew clean
+```
+
+#### iOS
+- Pastikan Xcode sudah terinstall dengan benar
+- Jika ada error pods, coba:
+```bash
+cd ios
+pod deintegrate
+pod install
 ```
 
 ## Struktur Proyek
@@ -67,6 +137,5 @@ dentalscan/
 ## Lisensi
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 
 Project Link: [https://github.com/username/dentalscan](https://github.com/username/dentalscan)
